@@ -2,6 +2,8 @@ package com.krazzylabs.timelapse;
 
 import org.junit.Test;
 
+import java.sql.Time;
+
 import static org.junit.Assert.*;
 
 /**
@@ -14,4 +16,11 @@ public class ExampleUnitTest {
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
     }
+
+    @Test
+    public void getTimeElasped() {
+        assertEquals("just now", TimeHelper.Companion.timeElasped(1545482000));
+    }
+
+
 }
