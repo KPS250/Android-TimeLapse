@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">TimeLapse</string>
+
+    <string name="JUST_NOW"> just ago</string>
+    <string name="MIN_AGO"> min ago</string>
+    <string name="HR_AGO"> hr ago</string>
+    <string name="HRS_AGO"> hrs ago</string>
+    <string name="DAY_AGO"> day ago</string>
+    <string name="DAYS_AGO"> days ago</string>
+    <string name="MONTH_AGO"> month ago</string>
+    <string name="MONTHS_AGO"> months ago</string>
+    <string name="YR_AGO"> yr ago</string>
+    <string name="YRS_AGO"> yrs ago</string>
+
 </resources>
