@@ -6,17 +6,17 @@ class TimeHelper{
 
     companion object {
 
-        private val millisInMinute = 60000
-        private val millisInHour = 3600000
-        private val millisInDay = 86400000
-        private val millisInMonth = 2592000000
-        private val millisInYear = 31104000000
+        private const val millisInMinute = 60000
+        private const val millisInHour = 3600000
+        private const val millisInDay = 86400000
+        private const val millisInMonth = 2592000000
+        private const val millisInYear = 31104000000
 
         fun timeElasped(timeInMillis : Long):String{
 
             var timeDifference = timeDiff(timeInMillis)
             return when {
-                timeDifference in 1..(millisInMinute-1) -> Constants.JUST_NOW
+                timeDifference in 0..(millisInMinute-1) -> Constants.JUST_NOW
                 timeDifference in millisInMinute..(millisInHour-1) -> computeMinutes(timeDifference)
                 timeDifference in millisInHour..(millisInDay-1) -> computeHours(timeDifference)
                 timeDifference in millisInDay..(millisInMonth-1) -> computeDays(timeDifference)
