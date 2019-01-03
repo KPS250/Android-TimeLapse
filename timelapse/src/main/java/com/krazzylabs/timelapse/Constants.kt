@@ -3,7 +3,7 @@ package com.krazzylabs.timelapse
 class Constants {
 
     companion object {
-        var JUST_NOW = " just ago"
+        var JUST_NOW = "just now"
         var MIN_AGO = " min ago"
         var MINS_AGO = " mins ago"
         var HR_AGO = " hr ago"
