@@ -11,6 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        tv_timeDisplay.text = TimeHelper.timeElasped(1545482022176)
+        elaspedTime.setElaspedTime(1545482022176)
     }
 }
