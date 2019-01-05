@@ -36,18 +36,26 @@ class TimeHelper{
 
         private fun computeMinutes(timeDifference : Long, minimalTime:Boolean=true): String{
             var ratio : Int = (timeDifference/millisInMinute).toInt()
-            return if(ratio==1)
-                "$ratio ${Constants.MIN_AGO}"
-            else
-                "$ratio ${Constants.MINS_AGO}"
+            return if(minimalTime)
+                "$ratio${Constants.MIN}"
+            else {
+                if (ratio == 1)
+                    "$ratio ${Constants.MIN_AGO}"
+                else
+                    "$ratio ${Constants.MINS_AGO}"
+            }
         }
 
         private fun computeHours(timeDifference : Long, minimalTime:Boolean=true): String{
             val ratio : Int = (timeDifference/millisInHour).toInt()
-            return if(ratio==1)
-                "$ratio ${Constants.HR_AGO}"
-            else
-                "$ratio ${Constants.HRS_AGO}"
+            return if(minimalTime)
+                "$ratio${Constants.HR}"
+            else {
+                if (ratio == 1)
+                    "$ratio ${Constants.HR_AGO}"
+                else
+                    "$ratio ${Constants.HRS_AGO}"
+            }
         }
 
         private fun computeDays(timeDifference : Long): String{
