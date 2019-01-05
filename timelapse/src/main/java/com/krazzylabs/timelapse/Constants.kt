@@ -1,5 +1,7 @@
 package com.krazzylabs.timelapse
 
+import java.time.Month
+
 class Constants {
 
     companion object {
@@ -15,5 +17,8 @@ class Constants {
         var YR_AGO = " yr ago"
         var YRS_AGO = " yrs ago"
         var LONG_AGO = " long long ago"
+
+        var MIN= "m"
+        var HR = "h"
     }
 }

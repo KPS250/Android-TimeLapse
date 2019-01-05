@@ -11,6 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        elaspedTime.setElaspedTime(1545482022176)
+        elaspedTime.setElaspedTime(1545482022176,true)
     }
 }
