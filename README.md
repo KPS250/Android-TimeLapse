@@ -1,4 +1,7 @@
-A library which helps you to display time elasped reltive to timeInMillis. Many apps like social/ecommerce always have some requirement to display time relative to a timestamp and **TimeElasped Library** handles this for you very smoothly.
+# TimeLapse
+### Library for Android Native
+
+A library which helps you to display time elasped reltaive to timeInMillis. Many apps from social/ecommerce domain always have some requirement to display time relative to a timestamp and **TimeElasped Library** handles this for you very smoothly.
 
 **Gradle**
 
@@ -19,10 +22,35 @@ dependencies {
 
 ###### KOTLIN
 ```
-elaspedTime.setElaspedTime(1545482022176)
+elaspedTime.setElaspedTime(1546711246379)  // OUTPUT --> just now
+elaspedTime.setElaspedTime(1546710300000)  // OUTPUT --> 13m
+elaspedTime.setElaspedTime(1513881000000)  // OUTPUT --> 12h
+elaspedTime.setElaspedTime(1545482022176)  // OUTPUT --> 22 Dec
+elaspedTime.setElaspedTime(1513881000000)  // OUTPUT --> 22 Dec 2017
+
+```
+###### JAVA
+```
+elaspedTime.setElaspedTime(1546711246379, true)  // OUTPUT --> just now
+elaspedTime.setElaspedTime(1546710300000, true)  // OUTPUT --> 13m
+elaspedTime.setElaspedTime(1513881000000, true)  // OUTPUT --> 12h
+elaspedTime.setElaspedTime(1545482022176, true)  // OUTPUT --> 22 Dec
+elaspedTime.setElaspedTime(1513881000000, true)  // OUTPUT --> 22 Dec 2017
+
 ```
 
-###### LICENSE
+**CONFIGURATION FOR TIME ELASPED**
+In Social Networking apps like Facebook, Twitter its a standard to show todays time as **1m, 2h** and if time is more than a day then short hand date like **22 Dec** and if its more than a year than **22 Dec 2017** year is displayed.If the requirement is to show only elasped time then you can set the minimaltime parameter to **false** which is by default true in Kotlin.The second Boolean parameter is an optional parameter in Kotlin but in Java its mandatory to specify it.
+```
+elaspedTime.setElaspedTime(1546711246379, flase)  // OUTPUT --> just now
+elaspedTime.setElaspedTime(1546710300000, false)  // OUTPUT --> 13 mins ago
+elaspedTime.setElaspedTime(1513881000000, false)  // OUTPUT --> 12 hrs ago
+elaspedTime.setElaspedTime(1545482022176, false)  // OUTPUT --> 14 days ago
+elaspedTime.setElaspedTime(1513881000000, false)  // OUTPUT --> 1 yr ago
+
+```
+
+**LICENSE**
 ```
 Copyright 2019 KrazzyLabs
 
