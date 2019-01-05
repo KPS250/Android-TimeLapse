@@ -7,7 +7,7 @@ A library which helps you to display time elasped reltaive to timeInMillis. Many
 
 ```
 dependencies {
-    implementation 'com.github.krazzylabs.timelasped:library:1.0.0'
+    implementation 'com.github.KPS250:TimeLapse:v0.1-alpha'
 }
 ```
 
