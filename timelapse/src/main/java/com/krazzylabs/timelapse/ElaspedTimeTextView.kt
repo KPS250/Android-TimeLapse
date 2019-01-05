@@ -8,8 +8,8 @@ class ElaspedTimeTextView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : TextView(context, attrs, defStyleAttr) {
 
-    fun setElaspedTime(time: Long){
-        text = TimeHelper.timeElasped(time)
+    fun setElaspedTime(time: Long, minimalTime:Boolean = true){
+        text = TimeHelper.timeElasped(time, minimalTime)
     }
 
 }

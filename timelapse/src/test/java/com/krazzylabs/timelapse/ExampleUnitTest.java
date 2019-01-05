@@ -19,7 +19,7 @@ public class ExampleUnitTest {
 
     @Test
     public void getTimeElasped() {
-        assertEquals("just now", TimeHelper.Companion.timeElasped(1545482000));
+        assertEquals("just now", TimeHelper.Companion.timeElasped(1545482000,true));
     }
 
 

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TimeLapseExample</string>
+    <string name="enter_time">Enter Time in Millis</string>
 </resources>
