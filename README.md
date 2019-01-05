@@ -3,8 +3,19 @@
 
 A library which helps you to display time elasped reltaive to timeInMillis. Many apps from social/ecommerce domain always have some requirement to display time relative to a timestamp and **TimeElasped Library** handles this for you very smoothly.
 
-**Gradle**
+**Gradle** 
 
+###### Add it in your root build.gradle at the end of repositories:
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+###### Add the Dependency
 ```
 dependencies {
     implementation 'com.github.KPS250:TimeLapse:v0.1-alpha'
