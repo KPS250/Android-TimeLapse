@@ -39,7 +39,7 @@ elaspedTime.setElaspedTime(1513881000000, true)  // OUTPUT --> 22 Dec 2017
 
 ```
 
-**CONFIGURATION FOR TIME ELASPED**
+**Configuration for Time Elasped**
 
 In Social Networking apps like Facebook, Twitter its a standard to show todays time as **1m, 2h** and if time is more than a day then short hand date like **22 Dec** and if its more than a year than **22 Dec 2017** year is displayed. If the requirement is to show only elasped time then you can set the minimaltime parameter to **false** which is by default true in Kotlin. The second Boolean parameter is an optional parameter in Kotlin but in Java its mandatory to specify it.
 ```
