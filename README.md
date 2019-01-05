@@ -1,5 +1,5 @@
 # TimeLapse
-### Library for Android Native
+### Library for Android Native [![](https://jitpack.io/v/KPS250/TimeLapse.svg)](https://jitpack.io/#KPS250/TimeLapse)
 
 A library which helps you to display time elasped reltaive to timeInMillis. Many apps from social/ecommerce domain always have some requirement to display time relative to a timestamp and **TimeElasped Library** handles this for you very smoothly.
 
